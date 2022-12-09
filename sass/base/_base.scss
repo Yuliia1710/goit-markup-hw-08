@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.page-body {
+  color: $primaryTextColor;
+  font-family: $mainFont;
+}
+// .container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+
+//   outline: 1px solid red;
+// }
+
+.section {
+  @media screen and (max-width: 1200px) {
+    padding: 60px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
+.link,
+.logo-link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: $accentColor;
+}
+.link:focus {
+  color: $accentColor;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}

@@ -1,0 +1,27 @@
+@import "./base/variables";
+@import "./base/base";
+@import "./base/_container.scss";
+@import "./utils/visually-hidden";
+@import "./layout/main_nav";
+@import "./components/logo";
+@import "./layout/header-nav";
+@import "./layout/contacts";
+@import "./layout/hero";
+@import "./components/hero-button";
+@import "./layout/features";
+@import "./layout/works";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio-filter";
+@import "./layout/progects";
+@import "./layout/footer";
+@import "./components/modal";
+
+%title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primaryTextColor;
+  margin-bottom: 50px;
+}

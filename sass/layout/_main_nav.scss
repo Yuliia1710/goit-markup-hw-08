@@ -1,0 +1,29 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+  .container {
+    background-color: $primaryWhiteColor;
+  }
+}
+
+.nav-list__link {
+  color: $accentColor;
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+
+  background-color: $accentColor;
+  border-radius: 2px;
+}
