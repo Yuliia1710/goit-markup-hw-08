@@ -75,6 +75,10 @@
       max-width: 232px;
       width: 100%;
     }
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
   &__text-link {
     font-weight: 400;
