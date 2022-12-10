@@ -3,17 +3,13 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: auto;
-  }
-
-  &__item:not(:last-child) {
-    @media screen and (min-width: 1200px) {
-      margin-right: 30px;
-    }
+    flex-direction: row;
+    width: 333px;
+    justify-content: space-between;
   }
 
   // margin-left: auto;
@@ -48,7 +44,7 @@
     height: 16px;
   }
   &__icon {
-    display: inline-flex;
+    display: flex;
     fill: $secondaryTextColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

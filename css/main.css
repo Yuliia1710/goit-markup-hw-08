@@ -49,7 +49,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -99,6 +98,9 @@ img {
   .main-nav {
     max-width: 738px;
     width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -110,11 +112,6 @@ img {
 .main-nav__logo {
   padding-top: 16px;
   padding-bottom: 16px;
-}
-@media screen and (min-width: 768px) {
-  .main-nav__logo {
-    margin-right: 87px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .main-nav__logo {
@@ -139,6 +136,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 283px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav-list__link {
     color: #2196f3;
@@ -157,9 +158,6 @@ img {
     background-color: #2196f3;
     border-radius: 2px;
   }
-  .nav-list__item:not(:last-child) {
-    margin-right: 50px;
-  }
 }
 
 .main-nav__logo {
@@ -175,14 +173,6 @@ img {
   color: #2196f3;
 }
 
-.nav-list__item:not(:last-child) {
-  margin-right: 50px;
-}
-@media screen and (min-width: 1200px) {
-  .nav-list__item:not(:last-child) {
-    margin-right: 53px;
-  }
-}
 .nav-list__link {
   display: block;
   padding-top: 32px;
@@ -213,18 +203,22 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact-list {
-    margin-left: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact-list__item:not(:last-child) {
-    margin-right: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 333px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .contact-list__mail-link, .contact-list__tel-link {
@@ -252,9 +246,9 @@ img {
   height: 16px;
 }
 .contact-list__icon {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   fill: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
