@@ -1,8 +1,9 @@
 .nav-list {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+  // display: flex;
+  // margin-left: 93px;
   .nav-list__item:not(:last-child) {
-    margin-right: 50px;
+    // margin-right: 50px;
   }
   &__link {
     display: block;

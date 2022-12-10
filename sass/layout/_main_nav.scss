@@ -1,7 +1,15 @@
 .main-nav {
   display: flex;
+  max-width: 450px;
+  width: 100%;
   align-items: center;
   white-space: nowrap;
+
+  &__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    // margin-right: 276px;
+  }
 }
 
 .page-header {
