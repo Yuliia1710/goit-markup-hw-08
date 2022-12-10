@@ -77,14 +77,14 @@
     </header> -->
     <main>
       <!-- Герой -->
-      <!-- <section class="hero centered">
+      <section class="hero centered">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="hero__button button" type="button">
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Переваги -->
       <section class="featuers section">
@@ -143,7 +143,7 @@
       </section>
 
       <!-- Чим займаємось -->
-      <!-- <section class="works centered section">
+      <section class="works centered section">
         <div class="container">
           <h2 class="work__title title">Чим ми займаємося</h2>
           <ul class="work__list list">
@@ -151,7 +151,11 @@
               <div class="thumb">
                 <img
                   class="work__img"
-                  src="./images/img1.jpg"
+                  srcset="
+                    ./images/works/img-1_370.jpg 1x,
+                    ./images/works/img-1_540.jpg 2x
+                  "
+                  src="./images/works/img-1_370.jpg"
                   alt="програміст працює на комп'ютері"
                   width="370"
                 />
@@ -162,7 +166,11 @@
               <div class="thumb">
                 <img
                   class="work__img"
-                  src="./images/img2.jpg"
+                  srcset="
+                    ./images/works/img-2_370.jpg 1x,
+                    ./images/works/img-2_540.jpg 2x
+                  "
+                  src="./images/works/img-2_370.jpg"
                   alt="програміст з телефоном в руці працює на комп'ютері"
                   width="370"
                 />
@@ -173,7 +181,11 @@
               <div class="thumb">
                 <img
                   class="work__img"
-                  src="./images/img3.jpg"
+                  srcset="
+                    ./images/works/img-3_370.jpg 1x,
+                    ./images/works/img-3_540.jpg 2x
+                  "
+                  src="./images/works/img-3_370.jpg"
                   alt="планшет в руках"
                   width="370"
                 />
@@ -182,19 +194,28 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наша команда -->
-      <!-- <section class="team section centered">
+      <section class="team section centered">
         <div class="container">
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
               <img
                 class="team-list__img"
-                src="./images/prod-desingner.jpg"
+                srcset="
+                  ./images/team/img-1_270.jpg 270w,
+                  ./images/team/img-1_354.jpg 354w,
+                  ./images/team/img-1_450.jpg 450w,
+                  ./images/team/img-1_540.jpg 540w,
+                  ./images/team/img-1_708.jpg 708w,
+                  ./images/team/img-1_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-1_450.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
+                width="450"
               />
               <h3 class="team-list__pre-title">Ігор Дем'яненко</h3>
               <p class="team-list__text">Product Designer</p>
@@ -232,9 +253,18 @@
             <li class="team-list__item">
               <img
                 class="team-list__img"
-                src="./images/frontend.jpg"
+                srcset="
+                  ./images/team/img-2_270.jpg 270w,
+                  ./images/team/img-2_354.jpg 354w,
+                  ./images/team/img-2_450.jpg 450w,
+                  ./images/team/img-2_540.jpg 540w,
+                  ./images/team/img-2_708.jpg 708w,
+                  ./images/team/img-2_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src=".images/team/img-2_450.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
+                width="450"
               />
               <h3 class="team-list__pre-title">Ольга Рєпіна</h3>
               <p class="team-list__text">Frontend Developer</p>
@@ -272,9 +302,18 @@
             <li class="team-list__item">
               <img
                 class="team-list__img"
-                src="./images/marketing.jpg"
+                srcset="
+                  ./images/team/img-3_270.jpg 270w,
+                  ./images/team/img-3_354.jpg 354w,
+                  ./images/team/img-3_450.jpg 450w,
+                  ./images/team/img-3_540.jpg 540w,
+                  ./images/team/img-3_708.jpg 708w,
+                  ./images/team/img-3_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src=".images/team/img-3_450.jpg"
                 alt="Микола Тарасов"
-                width="270"
+                width="450"
               />
               <h3 class="team-list__pre-title">Микола Тарасов</h3>
               <p class="team-list__text">Marketing</p>
@@ -312,9 +351,18 @@
             <li class="team-list__item">
               <img
                 class="team-list__img"
-                src="./images/uldesidner.jpg"
+                srcset="
+                  ./images/team/img-4_270.jpg 270w,
+                  ./images/team/img-4_354.jpg 354w,
+                  ./images/team/img-4_450.jpg 450w,
+                  ./images/team/img-4_540.jpg 540w,
+                  ./images/team/img-4_708.jpg 708w,
+                  ./images/team/img-4_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src=".images/team/img-4_450.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
+                width="450"
               />
               <h3 class="team-list__pre-title">Михайло Єрмаков</h3>
               <p class="team-list__text">UI Designer</p>
@@ -351,11 +399,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- CLIENTS -->
 
-      <!-- <section class="clients centered">
+      <section class="clients centered">
         <div class="container">
           <h2 class="clients__title title">Постійні клієнти</h2>
           <ul class="clients-list list">
@@ -394,7 +442,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-list__item">
               <a href="" class="clients-list__link clients-link link">
                 <svg class="clients-list__icon" height="60" width="106">
                   <use href="./images/icons.svg#icon-logo-6"></use>
@@ -403,11 +451,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Футер -->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container">
         <div class="page-footer__address-block">
           <a href="/" class="page-footer__logo-link logo-link">
@@ -511,7 +559,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- MODAL -->
     <!-- <div class="modal-backdrop is-hidden" data-modal>

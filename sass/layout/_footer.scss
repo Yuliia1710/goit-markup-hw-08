@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   .container {
-    display: flex;
+    // display: flex;
   }
   &__logo-link {
     font-family: "Raleway";
@@ -12,6 +12,10 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 39px;
+    }
   }
   &__logo-accent {
     color: $accentColor;
@@ -20,7 +24,17 @@
     color: $primaryWhiteColor;
   }
   &__address-block {
-    margin-right: 70px;
+    text-align: center;
+    // margin-left: 76px;
+    max-width: 450px;
+
+    @media screen and (max-width: 768px) {
+      // text-align: start;
+      // margin-left: 115px;
+      // margin-bottom: 60px;
+    }
+
+    // margin-right: 70px;
   }
 }
 
@@ -28,6 +42,8 @@
   font-family: "Roboto";
   font-style: normal;
   padding-top: 20px;
+  margin: 0 auto;
+
   &__text-link {
     font-weight: 400;
     font-size: 14px;
@@ -56,8 +72,9 @@
   }
 }
 .footer-icons {
-  padding-top: 12px;
-  margin-right: 93px;
+  margin-top: 60px;
+  text-align: center;
+  // margin-right: 93px;
   &__text {
     font-family: "Roboto";
     font-style: normal;
@@ -74,6 +91,8 @@
 
 .footer-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   .footer-list__icon:not(:last-child) {
     margin-right: 10px;
   }
@@ -106,7 +125,9 @@
 }
 
 .footer-join {
-  padding-top: 12px;
+  padding-top: 60px;
+  text-align: center;
+  // padding-top: 12px;
 
   &__text {
     font-size: 14px;
@@ -119,9 +140,13 @@
 }
 
 .input-field {
-  display: flex;
+  text-align: center;
+
+  // display: flex;
   &__input-footer {
-    width: 358px;
+    max-width: 450px;
+    width: 100%;
+    // width: 358px;
     height: 50px;
     background-color: $tertiaryBgColor;
     outline-style: none;
@@ -129,7 +154,8 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
+    // margin-right: 12px;
 
     font-size: 16px;
     line-height: 1.875;
@@ -154,6 +180,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+
   min-width: 200px;
   height: 50px;
   background: #2196f3;

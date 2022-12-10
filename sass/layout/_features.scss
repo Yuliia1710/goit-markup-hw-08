@@ -14,10 +14,14 @@
 
 .features {
   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
+      flex-direction: initial;
+      // gap: 30px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -35,7 +39,7 @@
     margin-top: 0;
     margin-bottom: $specificIdent;
 
-    text-align: start;
+    text-align: center;
   }
 
   &__text {
@@ -46,7 +50,10 @@
   }
   &__item {
     @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
+      width: 100%;
+      max-width: 738px;
+
       &:not(:last-child) {
         margin-bottom: 0;
       }
