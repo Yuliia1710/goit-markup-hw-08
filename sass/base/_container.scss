@@ -8,17 +8,20 @@
   @media screen and (min-width: 480px) {
     width: 450px;
     width: 100%;
+    max-width: 479px;
   }
 
   // tablet screen
   @media screen and (min-width: 768px) {
     width: 738px;
     width: 100%;
+    max-width: 767px;
   }
 
   // desktop screen
   @media screen and (min-width: 1200px) {
     width: 1200px;
     width: 100%;
+    max-width: 1199px;
   }
 }

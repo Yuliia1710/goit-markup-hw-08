@@ -12,8 +12,8 @@
   overflow-y: scroll;
 
   &__modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    min-height: 609px;
     top: 50%;
     left: 50%;
     position: relative;
@@ -26,8 +26,8 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1200px) {
-      width: 528px;
-      height: 581px;
+      max-width: 528px;
+      min-height: 581px;
     }
   }
   & .is-hidden .modal {
@@ -63,6 +63,10 @@
 
 .modal-form {
   padding: 40px;
+
+  @media screen and (max-width: 390px) {
+    padding: 10px;
+  }
   &__text {
     font-weight: 700;
     font-size: 20px;
