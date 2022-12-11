@@ -1,10 +1,25 @@
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  .filter-list__item:not(:last-child) {
-    margin-right: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    padding: 0 96px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
+
+  // justify-content: center;
+  // margin-bottom: 50px;
+
   &__button {
     background: $secondaryBgColor;
     font-weight: 500;
