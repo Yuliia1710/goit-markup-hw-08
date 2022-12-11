@@ -131,6 +131,13 @@
 .mobile-socials {
   display: flex;
   gap: 20px;
+  max-width: 354px;
+  width: 100%;
+
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
+
   &__link {
     font-weight: 500;
     font-size: 18px;

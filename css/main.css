@@ -1510,6 +1510,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  max-width: 354px;
+  width: 100%;
+}
+@media screen and (max-width: 479px) {
+  .mobile-socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .mobile-socials__link {
   font-weight: 500;
