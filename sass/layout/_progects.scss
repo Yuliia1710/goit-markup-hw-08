@@ -12,6 +12,12 @@
     flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
   }
 
   // width: 1170px;
@@ -30,6 +36,9 @@
     background-color: $primaryWhiteColor;
 
     @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+
       flex-basis: calc((100% - 30px) / 2);
     }
 
@@ -50,6 +59,7 @@
   border-bottom: $border;
   border-left: $border;
   border-right: $border;
+  flex-grow: 1;
   &__title {
     font-size: 18px;
     line-height: 2;
